@@ -59,12 +59,38 @@ void quick_sort(int *arr, int beg, int end) {
 	}
 }
 
-int main() { 
-	int* qs_arr = get_rand(20);
-    write_out(qs_arr, 0, 19);
+// NOTE main function of insertion sort
+void insert_sort(int *arr, int end) {
+    //determine key index and iterate over them
+    for (int j=1; j<= end; j++) {
+        int i = j - 1;
+        int key = arr[j]; // temporary variable. not fully "in-place" algorithm
 
-    quick_sort(qs_arr, 0, 19);
-    write_out(qs_arr, 0, 19);
+        // while the element is bigger than the key, swap it with the next element.
+        while (i>=0 && arr[i]>key) {
+            arr[i+1] = arr[i];
+            i--; // change to the next index for evaluation
+        }
+        arr[i+1] = key;
+    }
+}
+
+int main() {
+    int size = 12;
+
+    // Quick Sort
+	int* qs_arr = get_rand(size);
+    write_out(qs_arr, 0, size-1);
+    quick_sort(qs_arr, 0, size-1);
+    write_out(qs_arr, 0, size-1);
+    free(qs_arr);
+
+    // Insertion Sort
+    int* is_arr = get_rand(size);
+    write_out(is_arr, 0, size-1);
+    insert_sort(is_arr, size-1);
+    write_out(is_arr, 0, size-1);
+    free(is_arr);
 
     return 0;
 }
