@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "timer.h"
 
 // restringe random numbers to a maximum of 1000
 #define RAND_MAX 1000
@@ -76,19 +77,37 @@ void insert_sort(int *arr, int end) {
 }
 
 int main() {
-    int size = 12;
+    int size;
+    int runs;
+    double start;
+
+    printf("Size of test array: ");
+    scanf(" %d", &size);
+    printf("Number of runs to do on a single benchmark time: ");
+    scanf(" %d", &runs);
 
     // Quick Sort
 	int* qs_arr = get_rand(size);
+    printf("\n-- QUICK SORT --\n");
     write_out(qs_arr, 0, size-1);
-    quick_sort(qs_arr, 0, size-1);
+    start = get_time();
+    printf("time is: %lf", start);
+    for (int i=0; i<runs; i++) {
+        quick_sort(qs_arr, 0, size-1);
+    }
+    printf("Runtime length was: %lf\nSorted array is:\n", (get_time() - start));
     write_out(qs_arr, 0, size-1);
     free(qs_arr);
 
     // Insertion Sort
     int* is_arr = get_rand(size);
+    printf("\n-- INSERTION SORT --\n");
     write_out(is_arr, 0, size-1);
-    insert_sort(is_arr, size-1);
+    start = get_time();
+    for (int i=0; i<runs; i++) {
+        insert_sort(is_arr, size-1);
+    }
+    printf("Runtime length was: %lf\nSorted array is:\n", (get_time() - start));
     write_out(is_arr, 0, size-1);
     free(is_arr);
 

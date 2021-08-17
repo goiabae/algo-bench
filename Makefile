@@ -3,14 +3,14 @@ CC := gcc
 NAME := algo-bench
 RM := rm -f
 
-build: $(NAME).c timer.c
+build: $(NAME).o timer.o
 	mkdir -p bin
 	$(CC) $(NAME).o timer.o -o bin/$(NAME)
 
-$(NAME).c: src/timer.h $(NAME).c
+$(NAME).o: src/timer.h src/$(NAME).c
 	$(CC) -c src/$(NAME).c
 
-timer.c: timer.c
+timer.o: src/timer.c
 	$(CC) -c src/timer.c
 
 clean:
