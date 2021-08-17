@@ -16,3 +16,4 @@ timer.o: src/timer.c
 clean:
 	$(RM) bin/$(NAME)
 	$(RM) *.o
+	$(RM) script/result

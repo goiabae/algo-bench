@@ -1,0 +1,6 @@
+#!/bin/bash
+for i in {1..200}
+do
+    echo "$i" >> result
+    ../bin/algo-bench $i 100 | grep runtime >> result
+done

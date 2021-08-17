@@ -76,26 +76,34 @@ void insert_sort(int *arr, int end) {
     }
 }
 
-int main() {
+int main(int argc, char** argv) {
     int size;
     int runs;
+
+    if (argc != 3) {
+        printf("Wrong number of arguments");
+        return 0;
+    } else {
+        size = atoi(argv[1]);
+        runs = atoi(argv[2]);
+    }
+
     double start;
 
-    printf("Size of test array: ");
+    /*printf("Size of test array: ");
     scanf(" %d", &size);
     printf("Number of runs to do on a single benchmark time: ");
-    scanf(" %d", &runs);
+    scanf(" %d", &runs);*/
 
     // Quick Sort
 	int* qs_arr = get_rand(size);
     printf("\n-- QUICK SORT --\n");
     write_out(qs_arr, 0, size-1);
     start = get_time();
-    printf("time is: %lf", start);
     for (int i=0; i<runs; i++) {
         quick_sort(qs_arr, 0, size-1);
     }
-    printf("Runtime length was: %lf\nSorted array is:\n", (get_time() - start));
+    printf("Average runtime length was: %lf\nSorted array is:\n", (get_time() - start)*1e6 / runs);
     write_out(qs_arr, 0, size-1);
     free(qs_arr);
 
@@ -107,7 +115,7 @@ int main() {
     for (int i=0; i<runs; i++) {
         insert_sort(is_arr, size-1);
     }
-    printf("Runtime length was: %lf\nSorted array is:\n", (get_time() - start));
+    printf("Average runtime length was: %lf\nSorted array is:\n", (get_time() - start)*1e6 / runs);
     write_out(is_arr, 0, size-1);
     free(is_arr);
 
