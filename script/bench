@@ -1,6 +1,23 @@
 #!/bin/bash
 for i in {1..200}
 do
-    echo "$i" >> result
+    echo $i >> result
     ../bin/algo-bench $i 100 | grep runtime >> result
+done
+
+i=0
+
+cat result | while read y; do
+    if [ "$i" -eq 0 ]; then
+        i=$((i+1))
+        printf "%s" $y | tee -a quick.dat insert.dat
+    elif [ "$i" -eq 1 ]; then
+        i=$((i+1))
+        num=$(echo $y | sed 's/^.*[^0-9]\([0-9]*\.[0-9]*\).*$/\1/g')
+        printf "\t%s\n" $num >> quick.dat
+    elif [ "$i" -eq 2 ]; then
+        i=0
+        num=$(echo $y | sed 's/^.*[^0-9]\([0-9]*\.[0-9]*\).*$/\1/g')
+        printf "\t%s\n" $num >> insert.dat
+    fi
 done

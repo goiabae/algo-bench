@@ -17,3 +17,5 @@ clean:
 	$(RM) bin/$(NAME)
 	$(RM) *.o
 	$(RM) script/result
+	$(RM) script/quick.dat
+	$(RM) script/insert.dat

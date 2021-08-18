@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/VoidLinux)  (format=lualatex 2021.8.17)  18 AUG 2021 02:28
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/VoidLinux)  (format=lualatex 2021.8.17)  18 AUG 2021 10:36
  system commands enabled.
 **paper
 (./paper.tex
@@ -297,28 +297,28 @@ File: l3backend-luatex.def 2020-09-24 L3 backend support: PDF output (LuaTeX)
 ) (./paper.aux)
 \openout1 = paper.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 9.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 10
+.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -335,23 +335,25 @@ LaTeX Font Info:    ... okay on input line 9.
 \everyMPtoPDFconversion=\toks24
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 11.
+(Font)              <12> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 11.
+(Font)              <8> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 11.
+(Font)              <6> on input line 12.
 
 
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 14.
+(Font)              <7> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 14.
+(Font)              <5> on input line 15.
 
 \openout3 = paper.pyg
-(./_minted-paper/default-pyg-prefix.pygstyle) (./_minted-paper/default.pygstyle
-)
+(./_minted-paper/default-pyg-prefix.pygstyle)
+runsystem(pygmentize -S tango -f latex -P commandprefix=PYGtango > _minted-paper
+/tango.pygstyle)...executed
+ (./_minted-paper/tango.pygstyle)
 (./_minted-paper/AC8A33B2E983472DB7038909538812CAE4073C17023E95D3E38E19FCB1D88D
 2F.pygtex) [1
 
@@ -367,42 +369,61 @@ Missing character: There is no ⋅ (U+22C5) in font [lmroman10-regular]:+tlig;!
 (./_minted-paper/AE9B46E516F377D91BA50CFF2768ED4EE4073C17023E95D3E38E19FCB1D88D
 2F.pygtex) [2
 Missing character: There is no ⋅ (U+22C5) in font [lmmono10-regular]:!
-] [3] [4]
+] [3]
+Overfull \hbox (6.794pt too wide) in paragraph at lines 150--151
+\TU/lmr/m/n/10 Como dito an-te-ri-or-mente, a fer-ra-menta eh uma fun-cao timer sim-ples, \TU/lmtt/m/n/10 get_time()\TU/lmr/m/n/10 ,
+ []
+
+
+\openout3 = paper.pyg
+
+(./_minted-paper/DC840E4BC53CFF55A110DE285F291FBBC9D9B80A81857205E594000928280C
+0C.pygtex
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <8> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 5.
+) [4]
+\openout3 = paper.pyg
+
+(./_minted-paper/99E73FB5A5ECF8EA0DAC1FA82DE31D5EC9D9B80A81857205E594000928280C
+0C.pygtex)
 ! Misplaced alignment tab character &.
-l.164 Lee, J., &
+l.214 Lee, J., &
                Yeung, C. Y. (2018). \textit{Personalizing Lexical Simplifica...
 ? 
+runsystem(rm _minted-paper/default.pygstyle)...executed
 [5] (./paper.aux)
 runsystem(rm paper.pyg)...executed
 )
 
 Here is how much of LuaTeX's memory you used:
- 5369 strings out of 478903
+ 5427 strings out of 478903
  100000,460012 words of node,token memory allocated
  458 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 12 attribute, 52 glue_spec
 , 12 attribute_list, 1 write nodes
-   avail lists: 2:317,3:110,4:40,5:305,6:33,7:5481,8:34,9:238,10:15,11:437
- 24664 multiletter control sequences out of 65536+600000
- 52 fonts using 5135487 bytes
- 80i,6n,81p,870b,431s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf-dist/fonts/opentype/public/lm/lmmono8-regular.otf></usr/share/
-texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></usr/share/texmf-dist/
-fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf-dist/fonts/opent
-ype/public/lm/lmroman10-italic.otf></usr/share/texmf-dist/fonts/opentype/public/
-lm/lmroman12-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-
-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.ot
-f></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on paper.pdf (5 pages, 108578 bytes).
+   avail lists: 2:881,3:125,4:348,5:328,6:28,7:5481,8:34,9:238,10:15,11:376
+ 24685 multiletter control sequences out of 65536+600000
+ 54 fonts using 5387983 bytes
+ 80i,6n,81p,870b,436s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/
+texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf></usr/share/texmf-dist/f
+onts/opentype/public/lm/lmmono8-regular.otf></usr/share/texmf-dist/fonts/opentyp
+e/public/lm/lmroman5-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm
+/lmmono10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-
+italic.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></
+usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/
+texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf-dist
+/fonts/opentype/public/lm/lmroman17-regular.otf></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy7.pfb>
+Output written on paper.pdf (5 pages, 118832 bytes).
 
-PDF statistics: 104 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+PDF statistics: 118 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZlt{}sys/time.h\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZlt{}sys/resource.h\PYGZgt{}}
+
+\PYG{k+kt}{double} \PYG{n+nf}{get\PYGZus{}time}\PYG{p}{()}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{struct} \PYG{n+nc}{timeval} \PYG{n}{t}\PYG{p}{;}
+    \PYG{k}{struct} \PYG{n+nc}{timezone} \PYG{n}{tzp}\PYG{p}{;}
+    \PYG{n}{gettimeofday}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n}{t}\PYG{p}{,} \PYG{o}{\PYGZam{}}\PYG{n}{tzp}\PYG{p}{);}
+    \PYG{k}{return} \PYG{n}{t}\PYG{p}{.}\PYG{n}{tv\PYGZus{}sec} \PYG{o}{+} \PYG{n}{t}\PYG{p}{.}\PYG{n}{tv\PYGZus{}usec}\PYG{o}{*}\PYG{l+m+mf}{1e\PYGZhy{}6}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

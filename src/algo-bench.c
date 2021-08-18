@@ -103,7 +103,7 @@ int main(int argc, char** argv) {
     for (int i=0; i<runs; i++) {
         quick_sort(qs_arr, 0, size-1);
     }
-    printf("Average runtime length was: %lf\nSorted array is:\n", (get_time() - start)*1e6 / runs);
+    printf("Quick sort average runtime length was: %lf\nSorted array is:\n", (get_time() - start)*1e6 / runs);
     write_out(qs_arr, 0, size-1);
     free(qs_arr);
 
@@ -115,7 +115,7 @@ int main(int argc, char** argv) {
     for (int i=0; i<runs; i++) {
         insert_sort(is_arr, size-1);
     }
-    printf("Average runtime length was: %lf\nSorted array is:\n", (get_time() - start)*1e6 / runs);
+    printf("Insertion sort average runtime length was: %lf\nSorted array is:\n", (get_time() - start)*1e6 / runs);
     write_out(is_arr, 0, size-1);
     free(is_arr);
 

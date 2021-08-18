@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{int} \PYG{n}{start} \PYG{o}{=} \PYG{n}{get\PYGZus{}time}\PYG{p}{();}
+    \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{runs}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{quick\PYGZus{}sort}\PYG{p}{(}\PYG{n}{qs\PYGZus{}arr}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{size}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{printf}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Average runtime length was: \PYGZpc{}lf}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s}{Sorted array is:}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,}
+            \PYG{p}{(}\PYG{n}{get\PYGZus{}time}\PYG{p}{()} \PYG{o}{\PYGZhy{}} \PYG{n}{start}\PYG{p}{)}\PYG{o}{*}\PYG{l+m+mf}{1e6} \PYG{o}{/} \PYG{n}{runs}
+    \PYG{p}{);}
+\end{Verbatim}
