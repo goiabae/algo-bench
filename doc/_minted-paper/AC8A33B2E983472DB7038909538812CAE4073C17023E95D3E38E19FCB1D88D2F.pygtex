@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+INSERTION\PYGZhy{}SORT(A)
+    for j = 2 to A.comprimento
+        chave = A[j]
+        // Inserir A[j] na sequencia ordenada A[1..j\PYGZhy{}1]
+        i = j \PYGZhy{} 1
+        while i \PYGZgt{} 0 and A[i] \PYGZgt{} chave
+            A[i+1] = A[i]
+            i = i \PYGZhy{} 1
+        A[i+1] = chave
+\end{Verbatim}

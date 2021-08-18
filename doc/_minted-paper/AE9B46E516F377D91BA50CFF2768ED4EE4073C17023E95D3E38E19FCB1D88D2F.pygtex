@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+PARTITION(A, p, r)
+    x = A[r]
+    i = p \PYGZhy{} 1
+    for j = p to r \PYGZhy{} 1
+        if A[j] \PYGZlt{}= x
+            i = i + 1
+            trocar A[i] por A[j]
+    trocar A[i + 1] por A[r]
+    return i + 1
+\end{Verbatim}
