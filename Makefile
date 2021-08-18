@@ -16,6 +16,5 @@ timer.o: src/timer.c
 clean:
 	$(RM) bin/$(NAME)
 	$(RM) *.o
-	$(RM) script/result
-	$(RM) script/quick.dat
-	$(RM) script/insert.dat
+	$(RM) doc/quick.dat
+	$(RM) doc/insert.dat
