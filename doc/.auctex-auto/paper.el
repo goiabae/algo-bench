@@ -18,7 +18,8 @@
     "art10"
     "inputenc"
     "xcolor"
-    "minted")
+    "minted"
+    "graphicx")
    (LaTeX-add-xcolor-definecolors
     "GruvWhite"))
  :latex)

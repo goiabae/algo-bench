@@ -5,6 +5,8 @@
 \definecolor{GruvWhite}{HTML}{FBF1C7}
 \usepackage{minted}
 \usemintedstyle{tango}
+\usepackage{graphicx}
+\graphicspath{ {./} }
 
 \title{Trabalho Prático de Matemática Discreta: Análise de Algoritmos de Ordenação}
 \begin{document}
@@ -194,10 +196,9 @@ int start = get_time();
 
 Os resultados dos testes experimentais estaos \textit{plotados} no grafico a seguir:
 
-Deve conter:
-Gráfico comparando as três curvas de desempenho obtidas.
-Discussão comparando a análise assintótica e a experimental.
+\includegraphics[scale=0.5]{graph}
 
+Os resultados sao drasticamente contrastantes, como observado.
 
 \section{Referências}
 
