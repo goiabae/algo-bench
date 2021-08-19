@@ -2,15 +2,23 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage{xcolor}
-\definecolor{GruvWhite}{HTML}{FBF1C7}
+\definecolor{GruvWhite}{HTML}{F9F5D7}
+\definecolor{GruvBg}{HTML}{EBDBB2}
+\definecolor{GruvText}{HTML}{282828}
+\definecolor{GruvOrange}{HTML}{D65D0E}
 \usepackage{minted}
 \usemintedstyle{tango}
 \usepackage{graphicx}
 \graphicspath{ {./} }
 
-\title{Trabalho Prático de Matemática Discreta: Análise de Algoritmos de Ordenação}
+\let\Oldtexttt\texttt
+\renewcommand\texttt[1]{{\ttfamily\color{GruvOrange}#1}}
 
-\begin{document}
+\title{\bfseries{Trabalho Prático de Matemática Discreta: Análise de Algoritmos de Ordenação}}
+
+\pagecolor{GruvWhite}
+
+\color{GruvText}\begin{document}
 
 \maketitle
 
@@ -28,12 +36,12 @@
 
 \section{Descrição e Análise do Algoritmo 1}
 
-Nosso pseudocódigo para ordenação por inserção é apresentado como um procedimento denominado \textit{Insertion Sort}, que toma como parâmetro um arranjo \texttt{A[1..n]} contendo uma sequência de comprimento \texttt{n} que deverá ser ordenada. (No código, o número \texttt{n} de elementos em \texttt{A} é denotado por A⋅comprimento.) O algoritmo ordena os números da entrada no lugar: reorganiza os números dentro do arranjo A, com no máximo um número constante deles armazenado fora do arranjo em qualquer instante. O arranjo de entrada A conterá a sequência de saída ordenada quando Insertion-Sort terminar.
+Nosso pseudocódigo para ordenação por inserção é apresentado como um procedimento denominado \textit{Insertion Sort}, que toma como parâmetro um arranjo \texttt{A[1..n]} contendo uma sequência de comprimento \texttt{n} que deverá ser ordenada. No código, o número \texttt{n} de elementos em \texttt{A} é denotado por \texttt{A⋅comprimento}. O algoritmo ordena os números da entrada no lugar: reorganiza os números dentro do arranjo \texttt{A}, com no máximo um número constante deles armazenado fora do arranjo em qualquer instante. O arranjo de entrada A conterá a sequência de saída ordenada quando \textit{Insertion Sort} terminar.
 
 \begin{minted}[
 framesep=2mm,
 baselinestretch=1.2,
-bgcolor=GruvWhite,
+bgcolor=GruvBg,
 fontsize=\footnotesize,
 linenos
 ]{text}
@@ -52,31 +60,31 @@ Esse algoritmo funciona para \texttt{A = \{5, 2, 4, 6, 1, 3\}}. O índice \textt
 
 \section{Descrição e Análise do Algoritmo 2}
 
-O algoritmo quicksort é um método de ordenação muito rápido e eficiente, inventado por C.A.R. Hoare em 1960,O Quicksort é o algoritmo mais eficiente na ordenação por comparação. Nele se escolhe um elemento chamado de pivô, a partir disto é organizada a lista para que todos os números anteriores a ele sejam menores que ele, e todos os números posteriores a ele sejam maiores que ele. Ao final desse processo o número pivô já está em sua posição final. Os dois grupos desordenados recursivamente sofreram o mesmo processo até que a lista esteja ordenada.
+O algoritmo \textit{Quick Sort} é um método de ordenação muito rápido e eficiente, inventado por C.A.R. Hoare em 1960,O \textit{Quick Sort} é o algoritmo mais eficiente na ordenação por comparação. Nele se escolhe um elemento chamado de pivô, a partir disto é organizada a lista para que todos os números anteriores a ele sejam menores que ele, e todos os números posteriores a ele sejam maiores que ele. Ao final desse processo o número pivô já está em sua posição final. Os dois grupos desordenados recursivamente sofreram o mesmo processo até que a lista esteja ordenada.
 
-O quicksort, como a ordenação por intercalação, aplica o paradigma de divisão e conquista. Descrevemos a seguir, o processo de três etapas do método de divisão e conquista para ordenar um subarranjo típico \texttt{A[p..r]}. Divisão: Particionar (reorganizar) o arranjo \texttt{A[p..r]} em dois subarranjos (possivelmente vazios) \texttt{A[p..q − 1]} e \texttt{A[q + 1..r]} tais que, cada elemento de \texttt{A[p..q − 1]} é menor ou igual a \texttt{A[q]} que, por sua vez, é menor ou igual a cada elemento de \texttt{A[q + 1..r]}. Calcular o índice q como parte desse procedimento de particionamento. Conquista: Ordenar os dois subarranjos \texttt{A[p..q −1]} e \texttt{A[q + 1..r]} por chamadas recursivas a quicksort. Combinação: Como os subarranjos já estão ordenados, não é necessário nenhum trabalho para combiná-los: o arranjo \texttt{A[p..r]} inteiro agora está ordenado. O seguinte procedimento implementa o quicksort.
+O \textit{Quick Sort}, como a ordenação por intercalação, aplica o paradigma de divisão e conquista. Descrevemos a seguir, o processo de três etapas do método de divisão e conquista para ordenar um subarranjo típico \texttt{A[p..r]}. Divisão: Particionar (reorganizar) o arranjo \texttt{A[p..r]} em dois subarranjos (possivelmente vazios) \texttt{A[p..q − 1]} e \texttt{A[q + 1..r]} tais que, cada elemento de \texttt{A[p..q − 1]} é menor ou igual a \texttt{A[q]} que, por sua vez, é menor ou igual a cada elemento de \texttt{A[q + 1..r]}. Calcular o índice q como parte desse procedimento de particionamento. Conquista: Ordenar os dois subarranjos \texttt{A[p..q −1]} e \texttt{A[q + 1..r]} por chamadas recursivas a \texttt{QUICK\_SORT}. Combinação: Como os subarranjos já estão ordenados, não é necessário nenhum trabalho para combiná-los: o arranjo \texttt{A[p..r]} inteiro agora está ordenado. O seguinte procedimento implementa o \textit{Quick Sort}.
 
 \begin{minted}[
 framesep=2mm,
 baselinestretch=1.2,
-bgcolor=GruvWhite,
+bgcolor=GruvBg,
 fontsize=\footnotesize,
 linenos
 ]{text}
 QUICK_SORT(A,p,r)
     if p<r
         q = PARTITION(A, p, r)
-        QUICKSORT(A, p, q-1)
-        QUICKSORT(A, q+1, r)
+        QUICK_SORT(A, p, q-1)
+        QUICK_SORT(A, q+1, r)
 \end{minted}
 
-Para ordenar um arranjo \texttt{A}, inteiro, a chamada inicial é \texttt{QUICKSORT(A, 1, A⋅comprimento)}.
+Para ordenar um arranjo \texttt{A}, inteiro, a chamada inicial é \texttt{QUICK\_SORT(A, 1, A.comprimento)}.
 O particionamento do arranjo \texttt{A} para o algoritmo é chamado procedimento \texttt{PARTITION}, que reorganiza o subarranjo \texttt{A[p..r]} no \texttt{lugar}.
 
 \begin{minted}[
 framesep=2mm,
 baselinestretch=1.2,
-bgcolor=GruvWhite,
+bgcolor=GruvBg,
 fontsize=\footnotesize,
 linenos
 ]{text}
@@ -91,7 +99,7 @@ PARTITION(A, p, r)
     return i + 1
 \end{minted}
 
-O codigo acima mostra o funcionamento da funcao PARTITION para um arranjo de \texttt{r - p} elementos. \texttt{PARTITION} sempre seleciona um elemento \texttt{x = A[r]} como um elemento pivô ao redor do qual particionar o subarranjo \texttt{A[p..r]}. À medida que é executado, o procedimento reparte o arranjo em quatro regiões (possivelmente vazias). No início de cada iteração do laço for nas linhas 3−6.
+O codigo acima mostra o funcionamento da funcao \texttt{PARTITION} para um arranjo de \texttt{r - p} elementos. \texttt{PARTITION} sempre seleciona um elemento \texttt{x = A[r]} como um elemento pivô ao redor do qual particionar o subarranjo \texttt{A[p..r]}. À medida que é executado, o procedimento reparte o arranjo em quatro regiões (possivelmente vazias). No início de cada iteração do laço for nas linhas 3−6.
 
 \section{Análise Assintótica}
 
@@ -109,7 +117,7 @@ Representação em Ozão ou Theta da complexidade do algoritmo 1 no melhor e pio
 
 Representação em Ozão ou Theta da complexidade do algoritmo 2 no melhor e pior caso em relação ao tempo de execução:
 
-Na divisão mais equitativa possível, PARTITION produz dois subproblemas, cada um de tamanho não maior que \frac{n}{2}, já que um é de tamanho $\frac{n}{2}$ e o outro é de tamanho $\frac{n}{2} − 1$. Nesse caso, a execução do quicksort é muito mais rápida. Então, a recorrência para o tempo de execução é
+Na divisão mais equitativa possível, \texttt{PARTITION} produz dois subproblemas, cada um de tamanho não maior que $\frac{n}{2}$, já que um é de tamanho $\frac{n}{2}$ e o outro é de tamanho $\frac{n}{2}\−1$. Nesse caso, a execução do \textit{Quick Sort} é muito mais rápida. Então, a recorrência para o tempo de execução é
 \begin{itemize}
   \item{Para o melhor caso:}
     \begin{equation}
@@ -118,19 +126,19 @@ Na divisão mais equitativa possível, PARTITION produz dois subproblemas, cada 
 \end{itemize}
 onde toleramos o desleixo de ignorar o piso e o teto e de subtrair 1. Pelo caso 2 do teorema mestre, a solução dessa recorrência é \texttt{T(n) = Q(n lg n)}. Balanceando igualmente os dois lados da partição em todo nível da recursão, obtemos um algoritmo assintoticamente mais rápido.
 
-Particionamento no pior caso \texttt{O} para o quicksort ocorre quando a rotina de particionamento produz um subproblema com \texttt{n − 1} elementos e um com \texttt{0} elementos. Vamos considerar que esse particionamento não balanceado surja em cada chamada recursiva. O particionamento custa o tempo \texttt{Q(n)}. Visto que a chamada recursiva para um arranjo de tamanho \texttt{0} apenas retorna, \texttt{T(0) = Q(1)} e a recorrência para o tempo de execução é
+Particionamento no pior caso \texttt{O} para o \textit{Quick Sort} ocorre quando a rotina de particionamento produz um subproblema com \texttt{n − 1} elementos e um com \texttt{0} elementos. Vamos considerar que esse particionamento não balanceado surja em cada chamada recursiva. O particionamento custa o tempo \texttt{Q(n)}. Visto que a chamada recursiva para um arranjo de tamanho \texttt{0} apenas retorna, \texttt{T(0) = Q(1)} e a recorrência para o tempo de execução é
 \begin{itemize}
   \item{Para o pior caso:}
     \begin{equation}
       T(n) = T(n-1) + T(0) + \theta (n) = T(n-1) + \theta (n)
     \end{equation}
 \end{itemize}
-Intuitivamente, se somarmos os custos incorridos em cada nível da recursão, obteremos uma série aritmética (equação \texttt{(A.2)}), cujo valor chega a \texttt{Q(n2)}. Na realidade, é simples usar o método de substituição para provar que a recorrência \texttt{T(n) = T(n − 1) + Q(n)} tem a solução \texttt{T(n) = Q(n2)}.  Assim, se o particionamento é maximamente não balanceado em todo nível recursivo do algoritmo, o tempo de execução é \texttt{Q(n2 )}. Portanto, o tempo de execução do pior caso do quicksort não é melhor que o da ordenação por inserção. Além disso, o tempo de execução \texttt{Q(n2)} ocorre quando o arranjo de entrada já está completamente ordenado — uma situação comum na qual a ordenação por inserção é executada no tempo \texttt{O(n)}.
+Intuitivamente, se somarmos os custos incorridos em cada nível da recursão, obteremos uma série aritmética (equação \texttt{(A.2)}), cujo valor chega a \texttt{Q(n2)}. Na realidade, é simples usar o método de substituição para provar que a recorrência \texttt{T(n) = T(n − 1) + Q(n)} tem a solução \texttt{T(n) = Q(n2)}.  Assim, se o particionamento é maximamente não balanceado em todo nível recursivo do algoritmo, o tempo de execução é \texttt{Q(n2 )}. Portanto, o tempo de execução do pior caso do \textit{Quick Sort} não é melhor que o da ordenação por inserção. Além disso, o tempo de execução \texttt{Q(n2)} ocorre quando o arranjo de entrada já está completamente ordenado — uma situação comum na qual a ordenação por inserção é executada no tempo \texttt{O(n)}.
 
 \subsection{Debate a respeito de quais algoritmos são mais eficientes em diferentes cenários}
 \textit{Insertion Sort} é um algoritmo simples e eficiente quando aplicado em pequenas listas. Neste algoritmo a lista é percorrida da esquerda para a direita. A medida que avança, deixa os elementos mais à esquerda ordenados.
 
-\textit{Quick Sort} (em portugues, ``ordenação rápida'') tem tempo de execução do pior caso de \texttt{Q(n2)} para um arranjo de entrada de n números. Apesar desse tempo de execução lento para o pior caso, muitas vezes, o quicksort é a melhor opção prática para ordenação, devido à sua notável eficiência na média. Seu tempo de execução esperado é \texttt{Q(nlg n)}, e os fatores constantes ocultos na notação \texttt{Q(nlg n)} são bastante pequenos. Também apresenta a vantagem de ``ordenar no lugar'' e funciona bem até mesmo em ambientes de memória virtual
+\textit{Quick Sort} (em portugues, ``ordenação rápida'') tem tempo de execução do pior caso de \texttt{Q(n2)} para um arranjo de entrada de \texttt{n} números. Apesar desse tempo de execução lento para o pior caso, muitas vezes, o \textit{Quick Sort} é a melhor opção prática para ordenação, devido à sua notável eficiência na média. Seu tempo de execução esperado é \texttt{Q(nlg n)}, e os fatores constantes ocultos na notação \texttt{Q(nlg n)} são bastante pequenos. Também apresenta a vantagem de ``ordenar no lugar'' e funciona bem até mesmo em ambientes de memória virtual
 
 
 \section{Análise Experimental}
@@ -158,7 +166,7 @@ Como dito anteriormente, a ferramenta eh uma funcao timer simples, \texttt{get\_
 \begin{minted}[
 framesep=2mm,
 baselinestretch=1.2,
-bgcolor=GruvWhite,
+bgcolor=GruvBg,
 fontsize=\footnotesize,
 linenos
 ]{c}
@@ -180,7 +188,7 @@ double get_time()
 \begin{minted}[
 framesep=2mm,
 baselinestretch=1.2,
-bgcolor=GruvWhite,
+bgcolor=GruvBg,
 fontsize=\footnotesize,
 linenos
 ]{c}

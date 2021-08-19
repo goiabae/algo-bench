@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/VoidLinux)  (format=lualatex 2021.8.17)  18 AUG 2021 14:38
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/VoidLinux)  (format=lualatex 2021.8.17)  18 AUG 2021 22:54
  system commands enabled.
 **paper
 (./paper.tex
@@ -315,28 +315,28 @@ File: l3backend-luatex.def 2020-09-24 L3 backend support: PDF output (LuaTeX)
 ) (./paper.aux)
 \openout1 = paper.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 12
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 21
 .
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -361,19 +361,19 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 14.
+(Font)              <12> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 14.
+(Font)              <8> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 14.
+(Font)              <6> on input line 23.
 
 
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 17.
+(Font)              <7> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 17.
+(Font)              <5> on input line 26.
 
 \openout3 = paper.pyg
 (./_minted-paper/default-pyg-prefix.pygstyle) (./_minted-paper/tango.pygstyle)
@@ -381,113 +381,81 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 2F.pygtex) [1
 
 {/usr/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-Missing character: There is no ⋅ (U+22C5) in font [lmroman10-regular]:+tlig;!
+Missing character: There is no ⋅ (U+22C5) in font [lmmono10-regular]:!
 ]
 \openout3 = paper.pyg
 
-(./_minted-paper/018738845DC103291D3BD6795E2755BBE4073C17023E95D3E38E19FCB1D88D
+(./_minted-paper/87FFDEC831729224DBF99E7D2C72CAF6E4073C17023E95D3E38E19FCB1D88D
 2F.pygtex)
 \openout3 = paper.pyg
 
 (./_minted-paper/AE9B46E516F377D91BA50CFF2768ED4EE4073C17023E95D3E38E19FCB1D88D
-2F.pygtex) [2
-Missing character: There is no ⋅ (U+22C5) in font [lmmono10-regular]:!
-]
-! Missing $ inserted.
-<inserted text> 
-$
-l.111 ...da um de tamanho não maior que \frac{n}{2}
-                                                  , já que um é de tamanho...
+2F.pygtex) [2]
+! Undefined control sequence.
+l.120 ...}$ e o outro é de tamanho $\frac{n}{2}\−
+                                                  1$. Nesse caso, a execuçã...
+
 ? 
-! Extra }, or forgotten $.
-\frac  #1#2->{\begingroup #1\endgroup \over #2}
-                                               
-l.111 ...da um de tamanho não maior que \frac{n}{2}
-                                                  , já que um é de tamanho...
-? 
-Missing character: There is no á (U+00E1) in font cmmi7!
-Missing character: There is no á (U+00E1) in font cmmi7!
-Missing character: There is no é (U+00E9) in font cmmi7!
-Missing character: There is no é (U+00E9) in font cmmi7!
-! Missing $ inserted.
-<inserted text> 
-$
-l.111 ...}{2}, já que um é de tamanho $\frac{n}{2}
-                                                  $ e o outro é de tamanho ...
-? 
-! Extra }, or forgotten $.
-\frac  #1#2->{\begingroup #1\endgroup \over #2}
-                                               
-l.111 ...}{2}, já que um é de tamanho $\frac{n}{2}
-                                                  $ e o outro é de tamanho ...
-? 
-Missing character: There is no − (U+2212) in font cmr10!
-Missing character: There is no − (U+2212) in font cmr10!
 [3]
-Overfull \hbox (6.794pt too wide) in paragraph at lines 152--153
-\TU/lmr/m/n/10 Como dito an-te-ri-or-mente, a fer-ra-menta eh uma fun-cao timer sim-ples, \TU/lmtt/m/n/10 get_time()\TU/lmr/m/n/10 ,
+Overfull \hbox (6.794pt too wide) in paragraph at lines 161--162
+\TU/lmr/m/n/10 Como dito an-te-ri-or-mente, a fer-ra-menta eh uma fun-cao timer sim-ples, []\TU/lmtt/m/n/10 get_time()[]\TU/lmr/m/n/10 ,
  []
 
-
+[4]
 \openout3 = paper.pyg
 
 (./_minted-paper/DC840E4BC53CFF55A110DE285F291FBBC9D9B80A81857205E594000928280C
 0C.pygtex
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <8> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 5.
-) [4]
+)
 \openout3 = paper.pyg
 
 (./_minted-paper/99E73FB5A5ECF8EA0DAC1FA82DE31D5EC9D9B80A81857205E594000928280C
 0C.pygtex)
-<graph.png, id=32, 602.25pt x 451.6875pt>
+<graph.png, id=29, 602.25pt x 451.6875pt>
 File: graph.png Graphic file (type png)
 <use graph.png>
-Package luatex.def Info: graph.png  used on input line 199.
+Package luatex.def Info: graph.png  used on input line 208.
 (luatex.def)             Requested size: 301.12425pt x 225.84319pt.
- [5<./graph.png>]
+ [5]
 ! Misplaced alignment tab character &.
-l.215 Lee, J., &
+l.224 Lee, J., &
                Yeung, C. Y. (2018). \textit{Personalizing Lexical Simplifica...
 ? 
-[6] (./paper.aux)
+[6<./graph.png>] (./paper.aux)
 runsystem(rm paper.pyg)...executed
 )
-(\end occurred inside a group at level 2)
-
-### simple group (level 2) entered at line 111 ({)
-### simple group (level 1) entered at line 111 ({)
-### bottom level
 
 Here is how much of LuaTeX's memory you used:
- 5765 strings out of 478903
+ 5773 strings out of 478903
  100000,552014 words of node,token memory allocated
- 463 words of node memory still in use:
-   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 12 attribute, 53 glue_spec
+ 458 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 12 attribute, 52 glue_spec
 , 12 attribute_list, 1 write nodes
-   avail lists: 2:872,3:125,4:348,5:342,6:28,7:5489,8:34,9:282,10:10,11:376
- 24965 multiletter control sequences out of 65536+600000
- 54 fonts using 5387983 bytes
- 80i,6n,81p,989b,474s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 1:1,2:1023,3:119,4:404,5:261,6:26,7:5573,8:34,9:294,10:10,11:447
+
+ 24973 multiletter control sequences out of 65536+600000
+ 55 fonts using 5519735 bytes
+ 80i,7n,81p,1020b,436s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/
 texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf></usr/share/texmf-dist/f
 onts/opentype/public/lm/lmmono8-regular.otf></usr/share/texmf-dist/fonts/opentyp
 e/public/lm/lmroman5-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm
 /lmmono10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-
-italic.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></
-usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/
-texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf-dist
-/fonts/opentype/public/lm/lmroman17-regular.otf></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy7.pfb>
-Output written on paper.pdf (6 pages, 127456 bytes).
+italic.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf
+></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/sha
+re/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy7.pfb>
+Output written on paper.pdf (6 pages, 122182 bytes).
 
-PDF statistics: 123 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+PDF statistics: 116 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

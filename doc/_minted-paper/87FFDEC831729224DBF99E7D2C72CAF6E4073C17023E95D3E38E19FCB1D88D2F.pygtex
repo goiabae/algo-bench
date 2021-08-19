@@ -2,6 +2,6 @@
 QUICK\PYGZus{}SORT(A,p,r)
     if p\PYGZlt{}r
         q = PARTITION(A, p, r)
-        QUICKSORT(A, p, q\PYGZhy{}1)
-        QUICKSORT(A, q+1, r)
+        QUICK\PYGZus{}SORT(A, p, q\PYGZhy{}1)
+        QUICK\PYGZus{}SORT(A, q+1, r)
 \end{Verbatim}
